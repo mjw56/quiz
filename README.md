@@ -8,6 +8,12 @@ quiz app!
 npm install && npm run-script start
 ```
 
-#license
+# tech
+
+- react 16 (ssr)
+- rollup
+- node.JS
+
+# license
 
 MIT
