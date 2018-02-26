@@ -27,4 +27,6 @@ app.get('/', routes.home);
 app.get('/data', routes.data);
 app.post('/get-score', routes.getScore);
 
-app.listen(process.env.PORT, () => console.log(`app listening on port ${process.env.PORT}`));
+var listener = app.listen(process.env.PORT, function () {
+  console.log('Your app is listening on port ' + listener.address().port);
+});
