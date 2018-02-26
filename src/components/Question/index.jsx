@@ -10,6 +10,7 @@ const propTypes = {
   question: PropTypes.object.isRequired,
   currentAnswer: PropTypes.array.isRequired,
   handleQuestionAnswer: PropTypes.func,
+  userAnswer: PropTypes.number
 };
 const defaultProps = {
   question: {},
@@ -21,7 +22,8 @@ const Question = ({
   currentAnswer,
   handleQuestionAnswer,
   locked,
-  checkboxClass = ''
+  checkboxClass = '',
+  userAnswer
 }) => (
   <div className={`question ${locked ? 'locked' : ''}`}>
     <h3>{question}</h3>
@@ -35,7 +37,11 @@ const Question = ({
     >
       { answers.map((a, i) => (
         <label 
-          className={locked && currentAnswer[0] === i ? 'answer' : ''}
+          className={
+            locked && 
+              currentAnswer[0] === i ? 'answer' : 
+              userAnswer === i ? 'wrong-answer' : ''
+          }
         >
           <Checkbox 
             disabled={locked} 

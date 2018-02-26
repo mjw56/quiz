@@ -29,6 +29,15 @@
         }
       }
     }
+    label.wrong-answer {
+      span {
+        border-color: red;
+
+        &::after {
+          border-color: red;
+        }
+      }
+    }
     label:not(.answer) {
       label {
        opacity: 0.4;

@@ -140,6 +140,7 @@ class Quiz extends React.Component {
           <Results
             {...results}
             handleRestart={this.handleRestart}
+            answers={answers}
           /> 
         }
       </div>
