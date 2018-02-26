@@ -41,6 +41,6 @@
   },
   "scripts": {
     "build": "node build.js",
-    "start": "yarn build && node server"
+    "start": "npm run-script build && node server"
   }
 }
