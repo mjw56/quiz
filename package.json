@@ -1,0 +1,46 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mjw56",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.13.0",
+    "morgan": "^1.9.0",
+    "react": "^16.2.0",
+    "react-checkbox-group": "^4.0.1",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.39",
+    "@babel/plugin-syntax-typescript": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "@babel/register": "^7.0.0-beta.40",
+    "babel-plugin-external-helpers": "^7.0.0-beta.3",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "babel-plugin-transform-require-ignore": "^0.1.1",
+    "dotenv": "^5.0.0",
+    "prop-types": "^15.6.0",
+    "rollup": "^0.56.2",
+    "rollup-plugin-babel": "^4.0.0-beta.0",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-includepaths": "^0.2.2",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-sass": "^0.5.3",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-uglify": "^3.0.0",
+    "typescript": "^2.8.0-dev.20180224"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "start": "yarn build && node server"
+  }
+}

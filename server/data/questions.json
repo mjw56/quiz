@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "question": "Array.prototype.map() returns a new copy of the array.",
+    "answers": [
+      "true",
+      "false"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "Which of the following function of Array object adds one or more elements to the end of an array and returns the new length of the array?",
+    "answers": [
+      "pop",
+      "push",
+      "unshift",
+      "map"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "question": "What data structure is the Document Object Model (DOM)?",
+    "answers": [
+      "linked list",
+      "heap",
+      "stack",
+      "tree"
+    ],
+    "correctAnswer": 4
+  }
+]
