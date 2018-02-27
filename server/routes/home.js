@@ -1,6 +1,6 @@
 function route(req, res) {
   const Html = require('../../src/components/Html').default;
-  const App = require('../../src/components/App').default;
+  const Quiz = require('../../src/components/Quiz').default;
   const React = require('react');
   const ReactDOMServer = require('react-dom/server');
 
@@ -14,7 +14,7 @@ function route(req, res) {
 
   const markup = ReactDOMServer.renderToString(
     React.createElement(Html, null, 
-      React.createElement(App, APP_PROPS, null),
+      React.createElement(Quiz, APP_PROPS, null),
       React.createElement('script', {
         dangerouslySetInnerHTML: {__html: CLIENT_JS_SCOPE
       }})
